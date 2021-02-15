@@ -15,13 +15,19 @@ So the file with the name `DB_PORT` and the content `32800` will turn to an envi
 Add the following line to your `~/.config/direnv/direnvrc`:
 
 ```sh
-source_url "https://raw.githubusercontent.com/kayhide/direnv-use-env-dir/master/use_env_dir.sh" "sha256-jaaRik1JVXwgTQFWOr15WVY1OvYcVt+Oek9l3d85lUY="
+source_url "https://raw.githubusercontent.com/kayhide/direnv-use-env-dir/master/use_env_dir.sh" "sha256-OhI9bdI6Wk+/lVcAgxF2ePH5s4znGIGorIKw6qREDBk="
 ```
 
 Then in any `.envrc`, put the following line:
 
 ```sh
 use_env_dir
+```
+
+You can also specify the env dir as:
+
+```sh
+use_env_dir /path/to/your/env/dir
 ```
 
 ## Use case

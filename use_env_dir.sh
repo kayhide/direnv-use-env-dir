@@ -7,7 +7,7 @@
 # Also watch files so to automatially reload on every file update.
 use_env_dir() {
   local env_dir
-  env_dir="$(direnv_layout_dir)/envs"
+  env_dir="${1:-$(direnv_layout_dir)/envs}"
   if [[ -d $env_dir ]]; then
     for f in "$env_dir"/*; do
       if [[ -f $f ]]; then
